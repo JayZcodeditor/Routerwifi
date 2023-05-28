@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <nav class="navbar" style="border:1px red solid">
-        <a href="" class="logo" style="border:1px red solid">THAMAKI</a>
-        <div class="nav-links" style="border:1px red solid">
+    <nav class="navbar">
+        <a href="" class="logo">THAMAKI</a>
+        <div class="nav-links">
             <ul>
                 <li class="active"><a href="">Home</a></li>
                 <li><a href="">Adventures</a></li>
@@ -22,10 +22,18 @@
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
+        <i class="fa-solid fa-bars fa-2xl hamberger" style="color: white;"></i>
     </nav>
     <header></header>
 
 
 </body>
+<script>
+    const hamberger = document.querySelector(".hamberger")
+    const navlinks = document.querySelector(".nav-links")
+    hamberger.addEventListener('click', () => {
+        navlinks.classList.toggle('mobile-menu')
+    })
+</script>
 
 </html>
