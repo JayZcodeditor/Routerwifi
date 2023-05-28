@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(picture/corrupted-zoe-skin-lol-runeterra-8k-wallpaper-uhdpaper.com-448@1@i.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    font-size: large;
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+    color: red;
+    font-weight: 600;
+}
+
+@media screen and (min-max:900px) {
+    .nav-links {
+        display: none;
+    }
+}
